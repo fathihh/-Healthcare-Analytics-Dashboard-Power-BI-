@@ -1,30 +1,47 @@
-# -Healthcare-Analytics-Dashboard-Power-BI-
-This project presents an end-to-end Power BI dashboard built to analyze and monitor patient waiting list data. The goal is to transform raw healthcare data into meaningful insights that support operational and strategic decision-making.
-🔹 Project Objective
-Track current patient waiting list status
-Analyze trends across Inpatient, Outpatient, and Day Case categories
-Provide detailed insights by specialty, age group, and time bands
-🔹 Key Features
-📌 KPI Cards: Latest Month Wait List & Previous Year Comparison
-📈 Trend Analysis: Monthly waiting list patterns
-🔄 Dynamic Measures: Average vs Median toggle using DAX
-🏥 Category Breakdown: Inpatient vs Outpatient performance
-🧩 Granular Insights: Specialty-level & age-group analysis
-🎯 Interactive Dashboard: Slicers, tooltips, and navigation
-🔹 Tech Stack
-Power BI Desktop
-Power Query (Data Cleaning & Transformation)
-DAX (Calculated Measures & KPIs)
-Data Modeling (Relationships & Mapping Tables)
-🔹 Data Processing Workflow
-Requirement Gathering
-Data Collection (Folder Connector)
-Data Transformation (Cleaning, Appending, Structuring)
-Data Modeling (Relationships & Mapping)
-Dashboard Design & Visualization
-Interactivity (Filters, Buttons, Tooltips)
-Testing & Validation
-🔹 Key DAX Measures
+# 📊 Healthcare Analytics Dashboard (Power BI)
+
+An end-to-end Power BI project focused on analyzing **patient waiting list data** to generate actionable insights for healthcare decision-making.
+
+---
+
+## 🔹 Project Objective
+- Track current patient waiting list status  
+- Analyze trends across Inpatient, Outpatient, and Day Case  
+- Provide insights by specialty, age group, and time bands  
+
+---
+
+## 🔹 Key Features
+- KPI Cards: Latest Month Wait List & Previous Year Comparison  
+- Trend Analysis: Monthly waiting list patterns  
+- Dynamic DAX Measures: Average vs Median toggle  
+- Category Comparison: Inpatient vs Outpatient  
+- Detailed Analysis: Specialty-level & age-group insights  
+- Interactive Dashboard: Slicers, tooltips, navigation  
+
+---
+
+## 🔹 Tech Stack
+- Power BI Desktop  
+- Power Query (ETL)  
+- DAX (Data Analysis Expressions)  
+- Data Modeling  
+
+---
+
+## 🔹 Workflow
+1. Requirement Gathering  
+2. Data Collection (Folder Connector)  
+3. Data Transformation (Power Query)  
+4. Data Modeling (Relationships & Mapping)  
+5. Dashboard Design & Visualization  
+6. Interactivity (Filters, Tooltips, Navigation)  
+7. Testing & Validation  
+
+---
+
+## 🔹 Key DAX Measures
+```DAX
 Latest Month Wait List = 
 CALCULATE(
     SUM(All_Data[Total]),
@@ -40,16 +57,3 @@ CALCULATE(
 Average Wait List = AVERAGE(All_Data[Total])
 
 Median Wait List = MEDIAN(All_Data[Total])
-🔹 Outcomes
-Identified waiting list trends and peak demand periods
-Enabled comparison across healthcare service categories
-Delivered a clean and interactive dashboard for end users
-🔹 How to Use
-Download the dataset
-Open .pbix file in Power BI Desktop
-Refresh data (if needed)
-Explore dashboard using slicers and filters
-🔹 Future Improvements
-Real-time data integration
-Advanced forecasting using time-series models
-Row-Level Security (RLS) implementation
